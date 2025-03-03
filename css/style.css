@@ -1,0 +1,221 @@
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.logo {
+	color: black;
+	text-decoration: none;
+	font-family: 'Caveat', cursive;
+	font-size: 	30px;
+	transition: all .5s;
+}
+
+.logo:hover {
+	letter-spacing: 1px;
+	transition: all .5s;
+}
+
+.nav-listings {
+	font-family: 'Caveat', cursive;
+	color: black;
+}
+
+.vibe {
+	text-align: right; cursor: pointer; letter-spacing: 1px; font-weight: 300; font-size: 20px; font-family: 'Caveat', cursive; transition: all .5s;
+}
+
+.vibe:hover {
+	letter-spacing: 2px;
+	transition: all .5s;
+	color: #C732FF;
+}
+
+.quote {
+	font-family: 'Marck Script', cursive;
+	font-weight: 100;
+	line-height: 70px;
+/*	animation-name: captcha;
+	animation-duration: 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+*/	transition: all .5s;
+}
+
+.quote:hover {
+	letter-spacing: .5px;
+	transition: all .5s;
+	cursor: default;
+}
+
+@keyframes captcha {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+#preloader {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; }
+
+#status {
+  background-image: url("../img/preloader.gif");
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 2000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -35px;
+  margin-left: -35px; }
+
+.load-logo {
+	position: absolute;
+	font-family: 'Marck Script', cursive;
+	top: 50%;
+	left: -40px;
+	color: black;
+	font-size: 30px;
+	animation-name: captcha;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+
+.captcha-video {
+	cursor: pointer;
+	animation-name: captcha;
+	animation-duration: .5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	transition: all .5s;
+}
+
+.captcha-video:hover {
+	color: #C732FF;
+	letter-spacing: 2px;
+	transition: all .5s;
+}
+
+/* POPUP */
+
+.popup {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s; }
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3); } }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all .5s .2s; }
+  .popup__left {
+    width: 100%;
+    display: table-cell; }
+  .popup__right {
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem; }
+  .popup__img {
+    display: block;
+    width: 50%; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid #eee;
+    column-count: 1;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close:link, .popup__close:visited {
+    color: #777;
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .2s;
+    line-height: 1; }
+  .popup__close:hover {
+    color: #c732ff; }
+
+.heart-pump {
+	animation-name: heartpump;
+	animation-duration: .5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	transition: all .5s;
+}
+
+@keyframes heartpump {
+	0% {
+		transform: scale(1.0);
+	}
+
+	50% {
+		transform: scale(1.01);
+	}
+
+	100% {
+		transform: scale(1.0);
+	}
+}
+
+.promotion {
+	color: #c732ff;
+	animation-name: captcha;
+	animation-duration: .5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	transition: all .5s;
+}
